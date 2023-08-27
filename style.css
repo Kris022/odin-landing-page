@@ -3,9 +3,11 @@
 }
 
 body {
+  background-color: #f9faf8;
   font-family: "Roboto", "Arial", "Verdana", sans-serif;
   margin: 0;
-  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -90,7 +92,7 @@ body {
 }
 
 .info-section {
-  background-color: #f9faf8;;
+  background-color: #f9faf8;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -116,7 +118,7 @@ body {
 
 .card-image {
   border: 5px solid #3882f6;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 150px;
   height: 150px;
 }
@@ -127,4 +129,29 @@ body {
   text-align: center;
   justify-content: center;
   padding: 1rem;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  padding: 7rem;
+}
+
+.quote-section .container {
+}
+
+.quote-section .quote {
+  font-size: 38px;
+  font-style: oblique;
+  text-align: justify;
+  color: #1f2937;
+  font-weight: 100;
+  margin: 0;
+}
+
+.quote-author {
+  text-align: end;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 24px;
 }
