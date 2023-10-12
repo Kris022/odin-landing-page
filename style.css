@@ -29,4 +29,7 @@ body {
     background-color: var(--sidebar);
     color: var(--text-secondary);
     grid-row: span 2;
+
+    display: grid;
+    grid-template-rows: 1fr 8fr;
 }
