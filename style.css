@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap");
+
+:root {
+    --sidebar: #33c0fd;
+    --text-primary: black;
+    --text-secondary: white;
+    --main: #d6d6d6;
+}
+
+* {
+  font-family: "Gabarito", Helvetica, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: var(--sidebar);
+    color: var(--text-secondary);
+    grid-row: span 2;
+}
