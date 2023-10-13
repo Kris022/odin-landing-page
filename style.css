@@ -20,9 +20,14 @@ body {
   height: 100vh;
 }
 
+p, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
@@ -71,39 +76,41 @@ svg {
     grid-template-rows: 1fr 2fr;
     padding-top: 11px;
     padding-left: 20px;
+    box-shadow: 00 6px 4px -4px gray;
+    position: relative;
 }
 
-.top {
+.header .top {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 40px;
 }
 
-.top img {
+.header .top img {
     width: 50px;
     height: auto;
     border-radius: 100%;
 }
 
-.top input {
+.header .top input {
     background-color: var(--search-bar);
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 5px 5px;
 }
 
-.top .left {
+.header .top .left {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
     gap: 10px;
 }
 
-.top .left svg {
+.header .top .left svg {
     justify-self: right;
 }
 
-.top .right {
+.header .top .right {
     display: grid;
     grid-template-columns: 50px 50px 1fr 40px;
     gap: 10px;
@@ -148,4 +155,71 @@ svg {
     height: auto;
     border-radius: 100%;
     justify-self: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+    background-color: var(--main);
+}
+
+.main h3 {
+    padding-top: 15px;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.projects {
+    /* border: 1px solid red; */
+}
+
+.announcements {
+    /* border: 1px solid yellowgreen; */
+    padding: 10px;
+}
+
+.announcements h3 {
+    margin-block: 15px;
+}
+
+.announcements-board, .trending-board {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px 0 gray;
+}
+
+.announcement-card {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    margin-bottom: 10px;
+}
+
+.announcement-card:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 10px;
+}
+
+.trending-card img {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-left: 10px solid #FFB52E;
+    border-radius: 10px;
 }
