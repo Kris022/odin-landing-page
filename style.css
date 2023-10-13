@@ -67,6 +67,10 @@ svg {
 }
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding-top: 11px;
+    padding-left: 20px;
 }
 
 .top {
@@ -105,4 +109,43 @@ svg {
     gap: 10px;
     align-items: center;
     justify-self: right;
+}
+
+.header .bottom {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header .bottom .left {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+.header .bottom .right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 30px;
+    gap: 15px;
+    align-items: center;
+}
+
+.header button {
+    background-color: var(--sidebar);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+    font-size: 11pt;
+    padding: 10px 20px;
+}
+
+.tag h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.header .bottom img {
+    width: 80px;
+    height: auto;
+    border-radius: 100%;
+    justify-self: center;
 }
